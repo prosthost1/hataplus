@@ -11,6 +11,10 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  cursor: url(../cursors/cursor.cur), default;
+}
+a:hover {
+  cursor: url(../cursors/cursorbody.cur), default;
 }
 .topline {
   background-color: #1f1f56;
@@ -365,8 +369,10 @@ aside p {
   border-bottom-color: #fff;
   transform: rotate(45deg);
 }
-.aside-menu > li:hover .sub-menu {
+.aside-menu > li:hover .submenu-container {
   display: block;
+  transform: scaleY(1);
+  transform-origin: 0 0;
 }
 .aside-menu > li:hover > a {
   color: #fff;
@@ -380,8 +386,13 @@ aside p {
   color: #666;
   background-color: #cecedd;
 }
-.sub-menu {
+.submenu-container {
   display: none;
+  overflow: hidden; 
+}
+.sub-menu {
+  transform: scaleY(0);
+  transition: all 1s ease-in-out 1s;
 }
 .topfooter {
   background-color: #ededf5;
