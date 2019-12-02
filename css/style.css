@@ -32,7 +32,7 @@ nav {
 nav li {
   list-style: none;
   float: left;
-  margin: 15px;
+  margin: 11px;
 }
 nav a {
   text-decoration: none;
@@ -118,7 +118,7 @@ nav li:first-child {
 .phones .tel:before {
   content: "";
   position: absolute;
-  width: 19px;
+  width: 17px;
   height: 22px;
   left: -30px;
   background: url(../images/sprite.png);
@@ -236,7 +236,6 @@ nav li:first-child {
   font-size: 0.5em;
 }
 main {
-  display: inline-block;
   padding: 40px 0 46px;
 }
 main .about-us {
@@ -496,30 +495,42 @@ td:last-child {
   font: 700 24px "Roboto Slab";
   color: #24242b;
 }
+.contacts-row {
+  font-size: 0;
+}
+.contacts-column {
+  display: inline-block;
+  width: 50%;
+}
 .contacts ul {
-  float: left;
+  display: inline-block;
+  padding: 0;
   margin: 0;
-  padding: 0 81px 0 0;
-  font: normal 14px/21px "Arial";
+  vertical-align: top;
+  font: normal 14px "Arial";
   color: #666;
   list-style: none;
 }
 .contacts ul h3 {
-  font: 700 14px/24px "Roboto Slab";
+  font: 700 14px "Roboto Slab";
   color: #24242b;
 }
+.contacts p {
+  margin: 0;
+  padding: 5px 0;
+}
+.contacts ul:nth-child(2) p {
+  padding: 6px 0;
+}
 .contacts a {
-  font: bold 18px/24px "Arial";
+  font: bold 18px "Arial";
   color: #25252c;
   text-decoration: none;
 }
 .email {
-  font: normal 16px/24px "Arial";
+  font: normal 16px "Arial";
   text-decoration: underline;
 }
-.contacts p {
-  margin: 6px 0;
-}
-.contacts ul:nth-child(3) p {
-  margin-bottom: 8px;
+.contacts-column:first-child ul:last-child {
+  float: right;
 }
