@@ -387,7 +387,7 @@ aside p {
 }
 .submenu-container {
   display: none;
-  overflow: hidden; 
+  overflow: hidden;
 }
 .sub-menu {
   transform: scaleY(0);
@@ -490,6 +490,10 @@ td:last-child {
   text-align: right;
 }
 /*contacts page*/
+.contacts {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e4e4ec;
+}
 .contacts h3 {
   margin-top: 0;
   font: 700 24px "Roboto Slab";
@@ -507,6 +511,7 @@ td:last-child {
   padding: 0;
   margin: 0;
   vertical-align: top;
+  text-align: left;
   font: normal 14px "Arial";
   color: #666;
   list-style: none;
@@ -533,4 +538,106 @@ td:last-child {
 }
 .contacts-column:first-child ul:last-child {
   float: right;
+}
+.contacts-column:last-child {
+  text-align: center;
+}
+.contacts-column:last-child ul {
+  padding-left: 24%;
+}
+.map {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+.web-form {
+  width: 48.5%;
+  float: right;
+}
+.web-form h3 {
+  font: 700 14px/24px "Roboto Slab";
+  color: #24242b;
+}
+label {
+  padding-bottom: 10px;
+}
+input {
+  box-sizing: border-box;
+  outline: none;
+}
+::-webkit-input-placeholder {
+  color: #9999a6;
+  font: italic 13px "Arial";
+}
+.submit:hover {
+  cursor: url(../cursors/cursorbody.cur), default;
+}
+[type="text"]:hover,
+textarea:hover {
+  cursor: url(../cursors/pen.cur), default;
+}
+textarea {
+  box-sizing: border-box;
+  resize: none;
+  width: 465px;
+  height: 106px;
+}
+.name,
+.your-phone {
+  width: 230px;
+  height: 40px;
+}
+.topic {
+  display: block;
+  width: 465px;
+  height: 40px;
+}
+form p {
+  display: inline-block;
+  margin: 0;
+  font: normal 13px/21px "Arial";
+  color: #666;
+}
+[for="submit"] p {
+  position: absolute;
+  top: 12px;
+  left: 30px;
+  font: bold 14px "Arial";
+  color: #fff;
+}
+.submit {
+  padding: 12px 30px;
+  border: none;
+  font: bold 14px "Arial";
+  color: #fff;
+  background-color: #fd8300;
+  border-radius: 21px;
+}
+.news {
+  visibility: hidden;
+}
+form p {
+  padding-left: 30px;
+}
+[for="news"] {
+  position: relative;
+}
+[for="news"]:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: -8px;
+  top: -1px;
+  background-color: #ffffff;
+  border: 1px solid #c5c5d4;
+  border-radius: 3px;
+}
+.news:checked > label:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 5px;
+  border-bottom: 2px solid #1f1f56;
+  border-left: 2px solid #1f1f56;
 }
