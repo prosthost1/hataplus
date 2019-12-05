@@ -127,7 +127,7 @@ nav li:first-child {
 }
 .phones .tel:hover:before {
   width: 19px;
-  background-position: -53px 24px;
+  background-position: -52px 24px;
 }
 .topinfo .messagers:before {
   content: "";
@@ -548,29 +548,33 @@ td:last-child {
 .map {
   width: 50%;
   float: left;
+  padding-top: 36px;
   overflow: hidden;
 }
 .web-form {
   width: 48.5%;
   float: right;
+  padding-top: 36px;
 }
 .web-form h3 {
+  margin-top: 0;
   font: 700 14px/24px "Roboto Slab";
   color: #24242b;
 }
-label {
-  padding-bottom: 10px;
-}
 input {
   box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #c5c5d4;
+  margin-bottom: 10px;
   outline: none;
 }
 ::-webkit-input-placeholder {
+  padding: 16px;
   color: #9999a6;
   font: italic 13px "Arial";
 }
 .submit:hover {
-  cursor: url(../cursors/cursorbody.cur), default;
+  cursor: pointer;
 }
 [type="text"]:hover,
 textarea:hover {
@@ -578,9 +582,11 @@ textarea:hover {
 }
 textarea {
   box-sizing: border-box;
-  resize: none;
+  margin-bottom: 10px;
   width: 465px;
   height: 106px;
+  outline: none;
+  border-color: #c5c5d4;
 }
 .name,
 .your-phone {
