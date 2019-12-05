@@ -322,7 +322,6 @@ figure p {
 aside {
   float: right;
   width: 219px;
-  overflow: hidden;
   border-radius: 3px;
 }
 aside p {
@@ -338,6 +337,9 @@ aside p {
   padding-left: 0;
   list-style: none;
   background-color: #e4e4ec;
+}
+.sub-menu {
+  display: none; 
 }
 .aside-menu a {
   display: block;
@@ -368,10 +370,8 @@ aside p {
   border-bottom-color: #fff;
   transform: rotate(45deg);
 }
-.aside-menu > li:hover .submenu-container {
+.aside-menu > li:hover .sub-menu {
   display: block;
-  transform: scaleY(1);
-  transform-origin: 0 0;
 }
 .aside-menu > li:hover > a {
   color: #fff;
@@ -388,10 +388,6 @@ aside p {
 .submenu-container {
   display: none;
   overflow: hidden;
-}
-.sub-menu {
-  transform: scaleY(0);
-  transition: all 1s ease-in-out 1s;
 }
 .topfooter {
   background-color: #ededf5;
