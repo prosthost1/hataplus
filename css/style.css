@@ -470,9 +470,11 @@ tbody td {
   border-top: 1px solid #cdcddd;
   transition: all 0.1s ease;
 }
+tbody:hover {
+  cursor: url(../cursors/pointer.cur), auto;
+}
 tbody tr:hover {
   background-color: #fd8300;
-  cursor: pointer;
 }
 tr {
   transition: all 0.1s ease;
@@ -614,6 +616,15 @@ form p {
   color: #fff;
   background-color: #fd8300;
   border-radius: 21px;
+  transition: all 0.2s ease;
+}
+.submit:hover {
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1) inset;
+}
+.submit:hover,
+[for="news"]:hover,
+[for="text"]:hover {
+  cursor: url(../cursors/pointer.cur), auto;
 }
 .news {
   visibility: hidden;
