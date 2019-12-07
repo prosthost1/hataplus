@@ -338,6 +338,10 @@ aside p {
   list-style: none;
   background-color: #e4e4ec;
 }
+.sub-menu:hover,
+.aside-menu:hover {
+  cursor: url(../cursors/cursorbody.cur), default;
+}
 .sub-menu {
   display: none; 
 }
@@ -529,6 +533,10 @@ td:last-child {
   font: bold 18px "Arial";
   color: #25252c;
   text-decoration: none;
+  transition: all 0.2s ease;
+}
+.contacts a:hover {
+  color: #fd8300;
 }
 .email {
   font: normal 16px "Arial";
