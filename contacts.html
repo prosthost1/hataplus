@@ -154,13 +154,13 @@
         <section class="web-form">
           <h3>Форма зворотнього зв’язку</h3>
           <form action="">
-            <label for="name"><input type="text" placeholder="Ваше ім’я" id="name" class="name"></label>
-            <label for="phone"><input type="text" placeholder="Телефон" id="phone" class="your-phone"></label>
-            <label for="topic"><input type="text" placeholder="Тема повідомлення" id="topic" class="topic"></label>
-            <label for="text"><textarea name="" id="text" cols="82" rows="5" placeholder="Текст"></textarea></label>
-            <label for="submit"><input type="submit" id="submit" class="submit"></label>
+            <label for="name"><input type="text" placeholder="Ваше ім’я" id="name" class="name" required maxlength="20"></label>
+            <label for="phone"><input type="text" placeholder="Телефон" id="phone" class="your-phone" required maxlength="15"></label>
+            <label for="topic"><input type="text" placeholder="Тема повідомлення" id="topic" class="topic" required maxlength="60"></label>
+            <label for="text"><textarea name="" id="text" cols="82" rows="5" placeholder="Текст" maxlength="500"></textarea></label>
+            <label for="submit"><input type="submit" id="submit" class="submit" value="Відправити"></label>
             <p>
-              <label for="news"><input type="checkbox" id="news" class="news">Я бажаю отримувати останні новини</label>
+              <input type="checkbox" id="news" class="news" checked required><label for="news">Я бажаю отримувати останні новини</label>
             </p>
           </form>
         </section>

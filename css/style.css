@@ -567,12 +567,14 @@ input {
   outline: none;
 }
 ::-webkit-input-placeholder {
-  padding: 16px;
   color: #9999a6;
   font: italic 13px "Arial";
 }
 .submit:hover {
   cursor: pointer;
+}
+[type="text"] {
+  padding: 16px;
 }
 [type="text"]:hover,
 textarea:hover {
@@ -580,10 +582,12 @@ textarea:hover {
 }
 textarea {
   box-sizing: border-box;
+  padding: 16px;
   margin-bottom: 10px;
   width: 465px;
   height: 106px;
   outline: none;
+  resize: vertical;
   border-color: #c5c5d4;
 }
 .name,
@@ -619,7 +623,7 @@ form p {
   transition: all 0.2s ease;
 }
 .submit:hover {
-  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1) inset;
+  background-color: #1f1f56;
 }
 .submit:hover,
 [for="news"]:hover,
@@ -640,17 +644,20 @@ form p {
   position: absolute;
   width: 15px;
   height: 15px;
-  left: -8px;
+  left: -25px;
   top: -1px;
   background-color: #ffffff;
   border: 1px solid #c5c5d4;
   border-radius: 3px;
 }
-.news:checked > label:after {
+.news:checked + label:after {
   content: "";
   position: absolute;
-  width: 8px;
-  height: 5px;
+  width: 9px;
+  height: 4px;
+  transform: rotate(-45deg);
+  left: -22px;
+  top: 3px;
   border-bottom: 2px solid #1f1f56;
   border-left: 2px solid #1f1f56;
 }
