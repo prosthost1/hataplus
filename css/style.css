@@ -563,7 +563,7 @@ td:last-child {
   padding-top: 36px;
 }
 .web-form h3,
-.web-form h2
+.contacts ul h2,
 .web-form h1 {
   margin-top: 0;
   font: 700 14px/24px "Roboto Slab";
