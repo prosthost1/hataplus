@@ -32,7 +32,7 @@ nav {
 nav li {
   list-style: none;
   float: left;
-  margin: 11px;
+  margin: 11px 11px;
 }
 nav a {
   text-decoration: none;
@@ -46,7 +46,7 @@ nav a:hover {
 }
 nav ul {
   margin: 0;
-  padding: 0;
+  padding: 6px 0 0 0;
 }
 nav li:first-child {
   margin-left: 0;
@@ -56,9 +56,11 @@ nav li:first-child {
   display: block;
   clear: both;
 }
-.social,
-.social li {
+.social {
   float: right;
+}
+.social li {
+  display: inline-block;
 }
 .social ul {
   list-style: none;
@@ -71,6 +73,7 @@ nav li:first-child {
 }
 .social .fb {
   background-position: 0 0;
+  margin-left: 0;
   width: 14px;
   height: 20px;
 }
@@ -323,6 +326,7 @@ aside {
   float: right;
   width: 219px;
   border-radius: 3px;
+  overflow: hidden;
 }
 aside p {
   margin: 0;
