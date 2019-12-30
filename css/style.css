@@ -260,7 +260,7 @@ main .about-us p {
   color: #666;
 }
 main .about-us a {
-  display: block;
+  display: inline-block;
   margin: 24px 0 34px;
   font-size: 14px;
   line-height: 24px;
@@ -360,6 +360,10 @@ aside p {
 }
 .aside-menu li {
   position: relative;
+  border-bottom: 1px solid #cdcddd;
+}
+.aside-menu li:last-child {
+  border-bottom: none;
 }
 .aside-menu > li:before {
   content: "";
