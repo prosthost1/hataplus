@@ -577,6 +577,21 @@ td:last-child {
   font: 700 14px/24px "Roboto Slab";
   color: #24242b;
 }
+.web-form h2 {
+  margin: 0 0 20px;
+}
+iframe {
+  border: none;
+  position: absolute;
+  height: 355px;
+  width: 465px;
+  top: -15%;
+}
+.map-wrap {
+  position: relative;
+  height: 307px;
+  overflow: hidden;
+}
 input {
   box-sizing: border-box;
   border-radius: 3px;
