@@ -2,9 +2,9 @@
   font-family: "Roboto Slab";
   src: url("../fonts/RobotoSlab-Bold.eot");
   src: url("../fonts/RobotoSlab-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/RobotoSlab-Bold.woff2") format("woff2"),
-    url("../fonts/RobotoSlab-Bold.woff") format("woff"),
-    url("../fonts/RobotoSlab-Bold.ttf") format("truetype");
+  url("../fonts/RobotoSlab-Bold.woff2") format("woff2"),
+  url("../fonts/RobotoSlab-Bold.woff") format("woff"),
+  url("../fonts/RobotoSlab-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -244,6 +244,7 @@ main {
 main .about-us {
   float: left;
   margin-right: 28px;
+  padding-bottom: 34px;
   max-width: 74%;
   border-bottom: 1px solid #e4e4ec;
 }
@@ -259,15 +260,15 @@ main .about-us p {
   line-height: 24px;
   color: #666;
 }
-main .about-us a {
+.more {
   display: inline-block;
-  margin: 24px 0 34px;
+  margin: 24px 0 0;
   font-size: 14px;
   line-height: 24px;
   color: #fd8300;
   font-weight: bold;
 }
-main .about-us a:hover {
+.more:hover {
   text-decoration: none;
 }
 .products {
@@ -346,7 +347,7 @@ aside p {
   cursor: url(../cursors/cursorbody.cur), default;
 }
 .sub-menu {
-  display: none; 
+  display: none;
 }
 .aside-menu a {
   display: block;
@@ -434,6 +435,7 @@ aside p {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .price-list {
+  padding-bottom: 30px;
   border-bottom: 1px solid #e4e4ec;
 }
 .price-list h1 {
@@ -446,15 +448,6 @@ aside p {
   margin: 0;
   font: normal 14px/24px Arial;
   color: #666;
-}
-.price-list a {
-  display: inline-block;
-  padding: 20px 0 30px;
-  font: bold 14px/24px Arial;
-  color: #fd8300;
-}
-.price-list a:hover {
-  text-decoration: none;
 }
 table {
   width: 100%;
@@ -511,9 +504,16 @@ td:last-child {
 .contacts-row {
   font-size: 0;
 }
-.contacts-column {
+.contacts-column,
+.contacts-list{
   display: inline-block;
   width: 50%;
+}
+.flr {
+  float: right;
+}
+.fl {
+  float: left;
 }
 .contacts ul {
   display: inline-block;
@@ -524,10 +524,6 @@ td:last-child {
   font: normal 14px "Arial";
   color: #666;
   list-style: none;
-}
-.contacts ul h3 {
-  font: 700 14px "Roboto Slab";
-  color: #24242b;
 }
 .contacts p {
   margin: 0;
@@ -549,14 +545,9 @@ td:last-child {
   font: normal 16px "Arial";
   text-decoration: underline;
 }
-.contacts-column:first-child ul:last-child {
-  float: right;
-}
 .contacts-column:last-child {
+  float: right;
   text-align: center;
-}
-.contacts-column:last-child ul {
-  padding-left: 24%;
 }
 .map {
   width: 50%;
@@ -570,7 +561,7 @@ td:last-child {
   padding-top: 36px;
 }
 .web-form h3,
-.contacts ul h2,
+.contacts-column h2,
 .web-form h1 {
   margin-top: 0;
   font: 700 14px/24px "Roboto Slab";
