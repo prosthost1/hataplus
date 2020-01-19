@@ -101,21 +101,21 @@ nav li:first-child {
   padding: 29px 0;
 }
 .phones,
-.messagers {
+.messengers {
   padding-left: 50px;
 }
-.messagers {
+.messengers {
   position: relative;
 }
 .topinfo .phones,
-.topinfo .messagers,
+.topinfo .messengers,
 .topinfo .ordercall {
   padding-top: 5px;
 }
 .phones .tel,
 .phones .line,
-.messagers .email,
-.messagers .skype {
+.messengers .email,
+.messengers .skype {
   position: relative;
 }
 .phones .tel:before {
@@ -132,7 +132,7 @@ nav li:first-child {
   width: 19px;
   background-position: -52px 24px;
 }
-.topinfo .messagers:before {
+.topinfo .messengers:before {
   content: "";
   position: absolute;
   height: 51px;
@@ -147,7 +147,7 @@ nav li:first-child {
   color: #25252c;
   font-weight: bold;
 }
-.messagers a {
+.messengers a {
   font-size: 16px;
   line-height: 24px;
   color: #25252c;
@@ -157,7 +157,7 @@ nav li:first-child {
   display: inline-block;
   text-decoration: none;
 }
-.messagers .email:before {
+.messengers .email:before {
   content: "";
   position: absolute;
   width: 19px;
@@ -168,10 +168,10 @@ nav li:first-child {
   background-position: -70px 0;
   transition: all 0.3s ease;
 }
-.messagers .email:hover:before {
+.messengers .email:hover:before {
   background-position: -70px 23px;
 }
-.messagers .skype:before {
+.messengers .skype:before {
   content: "";
   position: absolute;
   width: 20px;
@@ -182,7 +182,7 @@ nav li:first-child {
   background-position: -90px 0;
   transition: all 0.3s ease;
 }
-.messagers .skype:hover:before {
+.messengers .skype:hover:before {
   background-position: -90px 25px;
 }
 .ordercall a:hover {
@@ -292,7 +292,6 @@ main .about-us a:hover {
 }
 figure {
   position: relative;
-  float: left;
   margin: 0;
 }
 figure img {
@@ -417,7 +416,7 @@ aside p {
   color: #fd8300;
 }
 .topfooter .phones,
-.topfooter .messagers {
+.topfooter .messengers {
   padding-left: 30px;
 }
 .bottomfooter {
