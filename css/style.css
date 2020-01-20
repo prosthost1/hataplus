@@ -68,7 +68,7 @@ nav li:first-child {
 .social a {
   display: block;
   background: url(../images/sprite.png);
-  margin: 0 12.5px;
+  margin: 0 12px;
   transition: all 0.3s ease;
 }
 .social .fb {
@@ -124,7 +124,7 @@ nav li:first-child {
   width: 17px;
   height: 22px;
   left: -30px;
-  background: url(../images/sprite.png);
+  background-image: url(../images/sprite.png);
   background-position: -53px 0;
   transition: all 0.3s ease;
 }
@@ -151,7 +151,7 @@ nav li:first-child {
   font-size: 16px;
   line-height: 24px;
   color: #25252c;
-  font-family: "Arial";
+  font-family: "Arial", serif;
 }
 .skype {
   display: inline-block;
@@ -164,7 +164,7 @@ nav li:first-child {
   height: 14px;
   left: -30px;
   top: 14%;
-  background: url(../images/sprite.png);
+  background-image: url(../images/sprite.png);
   background-position: -70px 0;
   transition: all 0.3s ease;
 }
@@ -178,7 +178,7 @@ nav li:first-child {
   height: 19px;
   left: -30px;
   top: 0;
-  background: url(../images/sprite.png);
+  background-image: url(../images/sprite.png);
   background-position: -90px 0;
   transition: all 0.3s ease;
 }
@@ -214,7 +214,6 @@ nav li:first-child {
   text-align: center;
   letter-spacing: 2px;
   color: #fff;
-  text-align: center;
   text-transform: uppercase;
 }
 .bottom-header p {
@@ -251,8 +250,7 @@ main .about-us {
 main h1 {
   font: bold 30px "Roboto Slab";
   color: #24242b;
-  margin: 0;
-  margin-bottom: 24px;
+  margin: 0 0 24px;
 }
 main .about-us p {
   margin-bottom: 17px;
@@ -425,7 +423,7 @@ aside p {
   color: #9999a6;
   text-align: center;
   background-color: #dcdce6;
-  padding: 13.5px 0;
+  padding: 13px 0;
 }
 .bottomfooter p {
   margin: 0;
