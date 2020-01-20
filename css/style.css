@@ -505,9 +505,14 @@ td:last-child {
   font-size: 0;
 }
 .contacts-column,
-.contacts-list{
+.contacts-list {
   display: inline-block;
   width: 50%;
+  vertical-align: top;
+}
+.contacts-list_last {
+  width: 53%;
+  text-align: left;
 }
 .flr {
   float: right;
