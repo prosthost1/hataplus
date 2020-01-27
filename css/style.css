@@ -27,7 +27,7 @@ address {
   margin: 0 auto;
 }
 sup {
-  font-size: 10px;
+  font-size: 0.6em;
 }
 nav {
   display: inline-block;
@@ -242,9 +242,6 @@ nav li:first-child {
   line-height: 24px;
   color: #fd8300;
   font-weight: bold;
-}
-.price2 sup {
-  font-size: 0.5em;
 }
 main {
   padding: 40px 0 46px;
