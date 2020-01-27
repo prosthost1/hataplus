@@ -5,10 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <title>Хата Плюс - Контакти</title>
   <link rel="stylesheet" href="css/style.css"/>
-  <meta
-    name="viewport"
-    content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0"
-  />
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0"/>
 </head>
 <body>
 <header class="header">
@@ -74,9 +71,11 @@
               <h2>Наш офіс</h2>
               <ul>
                 <li>
-                  <p>
-                    с. Війтівці, Хмельницька обл. 27500
-                  </p>
+                  <address>
+                    <p>
+                      с. Війтівці, Хмельницька обл. 27500
+                    </p>
+                  </address>
                 </li>
                 <li>
                   <p>
@@ -90,7 +89,7 @@
                 </li>
                 <li>
                   <p>
-                    <a href="mailto:hataplus@hata.com.ua"><span class="email">hataplus@hata.com.ua</span></a>
+                    <a href="mailto:hataplus@hata.com.ua" class="email">hataplus@hata.com.ua</a>
                   </p>
                 </li>
               </ul>
@@ -162,19 +161,16 @@
       </div>
     </section>
     <section class="web-form">
-      <h2>Форма зворотнього зв’язку</h2>
-      <form action="">
-        <label for="name"><input type="text" placeholder="Ваше ім’я" id="name" class="name" required
-                                 maxlength="20"></label>
-        <label for="phone"><input type="text" placeholder="Телефон" id="phone" class="your-phone" required
-                                  maxlength="15"></label>
-        <label for="topic"><input type="text" placeholder="Тема повідомлення" id="topic" class="topic" required
-                                  maxlength="60"></label>
+      <form action="php/sendmail.php" method="post">
+        <h2>Форма зворотнього зв’язку</h2>
+        <!--Якщо в лейблі знаходиться інпут, то for і id не потрібні-->
+        <label for="name"><input type="text" placeholder="Ваше ім’я" id="name" class="name text" required maxlength="20"></label>
+        <label for="phone"><input type="tel" placeholder="Телефон" id="phone" class="your-phone text" required maxlength="15"></label>
+        <label for="email"><input type="email" placeholder="Email" id="email" class="topic text" required maxlength="60"></label>
         <label for="text"><textarea name="" id="text" cols="82" rows="5" placeholder="Текст" maxlength="500"></textarea></label>
         <label for="submit"><input type="submit" id="submit" class="submit" value="Відправити"></label>
         <p>
-          <input type="checkbox" id="news" class="news" checked required><label for="news">Я бажаю отримувати останні
-          новини</label>
+          <input type="checkbox" id="news" class="news" checked required><label for="news">Я бажаю отримувати останні новини</label>
         </p>
       </form>
     </section>

@@ -16,6 +16,9 @@ body {
 a:hover {
   cursor: url(../cursors/cursorbody.cur), default;
 }
+address {
+  font-style: normal;
+}
 .topline {
   background-color: #1f1f56;
 }
@@ -118,6 +121,11 @@ nav li:first-child {
 .messengers .skype {
   position: relative;
 }
+.tel,
+.email {
+  display: inline-block;
+  margin-bottom: 4px;
+}
 .phones .tel:before {
   content: "";
   position: absolute;
@@ -187,8 +195,9 @@ nav li:first-child {
 }
 .ordercall a:hover {
   color: #fff;
-  background-color: #fd8300;
-  box-shadow: 0 0 0 4px #fd8300;
+  background-color: #1f1f56;
+  box-shadow: 0 5px 10px -5px #1f1f56;
+  border-color: transparent;
 }
 .ordercall a {
   padding: 10px 20px;
@@ -265,6 +274,9 @@ main .about-us p {
   line-height: 24px;
   color: #fd8300;
   font-weight: bold;
+}
+.about-us__more {
+  margin: 0;
 }
 .more:hover {
   text-decoration: none;
@@ -451,6 +463,8 @@ table {
   width: 100%;
   margin: 20px 0;
   border-collapse: collapse;
+  border-radius: 3px;
+  overflow: hidden;
 }
 thead {
   font: 700 14px/24px "Roboto Slab";
@@ -544,7 +558,7 @@ td:last-child {
 .contacts a:hover {
   color: #fd8300;
 }
-.email {
+a.email {
   font: normal 16px "Arial";
   text-decoration: underline;
 }
@@ -599,10 +613,10 @@ input {
 .submit:hover {
   cursor: pointer;
 }
-[type="text"] {
+.text {
   padding: 16px;
 }
-[type="text"]:hover,
+.text:hover,
 textarea:hover {
   cursor: url(../cursors/pen.cur), default;
 }
@@ -652,7 +666,7 @@ form p {
   background-color: #1f1f56;
 }
 .submit:hover,
-[for="news"]:hover,
+.news+label:hover,
 [for="text"]:hover {
   cursor: url(../cursors/pointer.cur), auto;
 }
@@ -662,17 +676,17 @@ form p {
 form p {
   padding-left: 30px;
 }
-[for="news"] {
+.news+label {
   position: relative;
 }
-[for="news"]:before {
+.news+label:before {
   content: "";
   position: absolute;
   width: 15px;
   height: 15px;
   left: -25px;
   top: -1px;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #c5c5d4;
   border-radius: 3px;
 }
