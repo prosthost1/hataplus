@@ -556,6 +556,7 @@ td:last-child {
   color: #fd8300;
 }
 a.email {
+  margin-bottom: 9px;
   font: normal 16px "Arial";
   text-decoration: underline;
 }
