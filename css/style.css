@@ -11,10 +11,6 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  cursor: url(../cursors/cursor.cur), default;
-}
-a:hover {
-  cursor: url(../cursors/cursorbody.cur), default;
 }
 address {
   font-style: normal;
@@ -351,7 +347,7 @@ aside p {
 }
 .sub-menu:hover,
 .aside-menu:hover {
-  cursor: url(../cursors/cursorbody.cur), default;
+  cursor: pointer;
 }
 .sub-menu {
   display: none;
@@ -484,7 +480,7 @@ tbody td {
   transition: all 0.1s ease;
 }
 tbody:hover {
-  cursor: url(../cursors/pointer.cur), auto;
+  cursor: pointer;
 }
 tbody tr:hover {
   background-color: #fd8300;
@@ -666,7 +662,7 @@ form p {
 .submit:hover,
 .news+label:hover,
 [for="text"]:hover {
-  cursor: url(../cursors/pointer.cur), auto;
+  cursor: pointer;
 }
 .news {
   visibility: hidden;
