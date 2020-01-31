@@ -189,14 +189,8 @@ nav li:first-child {
 .messengers .skype:hover:before {
   background-position: -90px 25px;
 }
-.ordercall a:hover {
-  color: #fff;
-  background-color: #1f1f56;
-  box-shadow: 0 5px 10px -5px #1f1f56;
-  border-color: transparent;
-}
 .ordercall a {
-  padding: 10px 20px;
+  padding: 12px 27px;
   float: right;
   font: bold 16px/24px Arial;
   color: #25252c;
@@ -204,6 +198,12 @@ nav li:first-child {
   border: 2px solid #fd8300;
   border-radius: 25px;
   transition: all 0.15s ease;
+}
+.ordercall a:hover {
+  color: #fff;
+  background-color: #1f1f56;
+  box-shadow: 0 5px 10px -5px #1f1f56;
+  border-color: transparent;
 }
 .bottom-header {
   padding-top: 50px;
