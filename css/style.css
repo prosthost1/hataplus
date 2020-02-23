@@ -19,7 +19,7 @@ address {
   background-color: #1f1f56;
 }
 .wrapper {
-  max-width: 960px;
+  width: 960px;
   margin: 0 auto;
 }
 sup {
@@ -307,6 +307,7 @@ figure a {
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 figure h3 {
   text-decoration: none;
@@ -316,7 +317,7 @@ figure h3 {
   font-weight: bold;
   margin: 0;
 }
-figure a:hover + h3 {
+figure a:hover~figcaption h3 {
   text-decoration: underline;
 }
 figure p {
@@ -694,4 +695,24 @@ form p {
   top: 3px;
   border-bottom: 2px solid #1f1f56;
   border-left: 2px solid #1f1f56;
+}
+.discounts {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.d-price {
+  position: absolute;
+  display: inline-block;
+  min-width: 80px;
+  text-align: center; 
+  background-color: #1f1f56;
+}
+.d-price p:first-child {
+  font: bold 20px "Roboto Slab";
+  color: #fff;
+}
+.d-price p:last-child {
+  font: italic 14px "Roboto Slab";
+  color: #fff;
+  text-decoration: line-through;
 }
